@@ -1,0 +1,567 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 -- -- Gui to Lua\
+-- Version: 3.2\
+\
+-- Instances:\
+\
+local modmenu = Instance.new("ScreenGui")\
+local Menu = Instance.new("Frame")\
+local UICorner = Instance.new("UICorner")\
+local Text = Instance.new("TextButton")\
+local Frame = Instance.new("Frame")\
+local InvisibilityButton = Instance.new("TextButton")\
+local HighlightButton = Instance.new("TextButton")\
+local Settingsandmore = Instance.new("ImageButton")\
+local _800speed = Instance.new("TextButton")\
+local Openclose = Instance.new("Frame")\
+local ImageButton = Instance.new("ImageButton")\
+local Settingsandmorethings = Instance.new("Frame")\
+local UICorner_2 = Instance.new("UICorner")\
+local Frame_2 = Instance.new("Frame")\
+local Text_2 = Instance.new("TextButton")\
+local TextButton = Instance.new("TextButton")\
+local highlighttext = Instance.new("TextButton")\
+local note = Instance.new("TextButton")\
+local normalspeed = Instance.new("TextButton")\
+\
+--Properties:\
+\
+modmenu.Name = "modmenu"\
+modmenu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")\
+modmenu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling\
+\
+Menu.Name = "Menu"\
+Menu.Parent = modmenu\
+Menu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+Menu.BackgroundTransparency = 0.700\
+Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Menu.BorderSizePixel = 0\
+Menu.Position = UDim2.new(0.16548942, 0, -0.0620706342, 0)\
+Menu.Size = UDim2.new(0, 162, 0, 420)\
+Menu.Visible = false\
+\
+UICorner.CornerRadius = UDim.new(0, 20)\
+UICorner.Parent = Menu\
+\
+Text.Name = "Text"\
+Text.Parent = Menu\
+Text.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+Text.BackgroundTransparency = 1.000\
+Text.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Text.BorderSizePixel = 0\
+Text.Position = UDim2.new(0.197530866, 0, 0.0476190485, 0)\
+Text.Size = UDim2.new(0, 97, 0, 50)\
+Text.Font = Enum.Font.SourceSans\
+Text.Text = "Sashamic7's modmenu"\
+Text.TextColor3 = Color3.fromRGB(252, 255, 255)\
+Text.TextSize = 14.000\
+\
+Frame.Parent = Menu\
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+Frame.BackgroundTransparency = 0.800\
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Frame.BorderSizePixel = 0\
+Frame.Position = UDim2.new(0, 0, 0.183333337, 0)\
+Frame.Size = UDim2.new(0, 162, 0, 7)\
+\
+InvisibilityButton.Name = "InvisibilityButton"\
+InvisibilityButton.Parent = Menu\
+InvisibilityButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+InvisibilityButton.BackgroundTransparency = 0.900\
+InvisibilityButton.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+InvisibilityButton.BorderSizePixel = 0\
+InvisibilityButton.Position = UDim2.new(0.0185185187, 0, 0.247619048, 0)\
+InvisibilityButton.Size = UDim2.new(0, 159, 0, 50)\
+InvisibilityButton.Font = Enum.Font.SourceSans\
+InvisibilityButton.Text = "invizable"\
+InvisibilityButton.TextColor3 = Color3.fromRGB(252, 255, 255)\
+InvisibilityButton.TextSize = 14.000\
+\
+HighlightButton.Name = "HighlightButton"\
+HighlightButton.Parent = Menu\
+HighlightButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+HighlightButton.BackgroundTransparency = 0.900\
+HighlightButton.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+HighlightButton.BorderSizePixel = 0\
+HighlightButton.Position = UDim2.new(0.0185185187, 0, 0.414285719, 0)\
+HighlightButton.Size = UDim2.new(0, 159, 0, 50)\
+HighlightButton.Font = Enum.Font.SourceSans\
+HighlightButton.Text = "HighlightPlayers"\
+HighlightButton.TextColor3 = Color3.fromRGB(252, 255, 255)\
+HighlightButton.TextSize = 14.000\
+\
+Settingsandmore.Name = "Settings and more"\
+Settingsandmore.Parent = Menu\
+Settingsandmore.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+Settingsandmore.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Settingsandmore.BorderSizePixel = 0\
+Settingsandmore.Position = UDim2.new(0.543209791, 0, 0.86190474, 0)\
+Settingsandmore.Size = UDim2.new(0, 62, 0, 58)\
+Settingsandmore.Image = "http://www.roblox.com/asset/?id=16669355537"\
+\
+_800speed.Name = "800 speed"\
+_800speed.Parent = Menu\
+_800speed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+_800speed.BackgroundTransparency = 0.900\
+_800speed.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+_800speed.BorderSizePixel = 0\
+_800speed.Position = UDim2.new(-9.41900566e-08, 0, 0.597619057, 0)\
+_800speed.Size = UDim2.new(0, 162, 0, 50)\
+_800speed.Font = Enum.Font.SourceSans\
+_800speed.Text = "speed 800"\
+_800speed.TextColor3 = Color3.fromRGB(252, 255, 255)\
+_800speed.TextSize = 14.000\
+\
+Openclose.Name = "Open/close"\
+Openclose.Parent = modmenu\
+Openclose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+Openclose.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Openclose.BorderSizePixel = 0\
+Openclose.Position = UDim2.new(0.00772200758, 0, 0.787346244, 0)\
+Openclose.Size = UDim2.new(0, 80, 0, 72)\
+\
+ImageButton.Parent = Openclose\
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+ImageButton.BorderSizePixel = 0\
+ImageButton.Size = UDim2.new(0, 80, 0, 72)\
+ImageButton.Image = "http://www.roblox.com/asset/?id=9385617739"\
+\
+Settingsandmorethings.Name = "Settings and more things"\
+Settingsandmorethings.Parent = modmenu\
+Settingsandmorethings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+Settingsandmorethings.BackgroundTransparency = 0.600\
+Settingsandmorethings.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Settingsandmorethings.BorderSizePixel = 0\
+Settingsandmorethings.Position = UDim2.new(0.441176683, 0, -0.00057330617, 0)\
+Settingsandmorethings.Size = UDim2.new(0, 215, 0, 420)\
+Settingsandmorethings.Visible = false\
+\
+UICorner_2.CornerRadius = UDim.new(0, 20)\
+UICorner_2.Parent = Settingsandmorethings\
+\
+Frame_2.Parent = Settingsandmorethings\
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+Frame_2.BackgroundTransparency = 0.800\
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Frame_2.BorderSizePixel = 0\
+Frame_2.Position = UDim2.new(0, 0, 0.183333337, 0)\
+Frame_2.Size = UDim2.new(0, 215, 0, 9)\
+\
+Text_2.Name = "Text"\
+Text_2.Parent = Settingsandmorethings\
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+Text_2.BackgroundTransparency = 1.000\
+Text_2.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+Text_2.BorderSizePixel = 0\
+Text_2.Position = UDim2.new(0.125581399, 0, 0.0476190485, 0)\
+Text_2.Size = UDim2.new(0, 161, 0, 50)\
+Text_2.Font = Enum.Font.SourceSans\
+Text_2.Text = "Settings and more"\
+Text_2.TextColor3 = Color3.fromRGB(252, 255, 255)\
+Text_2.TextSize = 14.000\
+Text_2.TextWrapped = true\
+\
+TextButton.Parent = Settingsandmorethings\
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+TextButton.BorderSizePixel = 0\
+TextButton.Position = UDim2.new(-0.00144440401, 0, 0.326190472, 0)\
+TextButton.Size = UDim2.new(0, 31, 0, 17)\
+TextButton.Font = Enum.Font.SourceSans\
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)\
+TextButton.TextSize = 14.000\
+\
+highlighttext.Name = "highlight text"\
+highlighttext.Parent = Settingsandmorethings\
+highlighttext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)\
+highlighttext.BackgroundTransparency = 1.000\
+highlighttext.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+highlighttext.BorderSizePixel = 0\
+highlighttext.Position = UDim2.new(0.139534891, 0, 0.221428573, 0)\
+highlighttext.Size = UDim2.new(0, 154, 0, 36)\
+highlighttext.Font = Enum.Font.SourceSans\
+highlighttext.Text = "highlight color"\
+highlighttext.TextColor3 = Color3.fromRGB(252, 255, 255)\
+highlighttext.TextSize = 14.000\
+\
+note.Name = "note"\
+note.Parent = Settingsandmorethings\
+note.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+note.BackgroundTransparency = 1.000\
+note.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+note.BorderSizePixel = 0\
+note.Position = UDim2.new(0.0325581394, 0, 0.326190472, 0)\
+note.Size = UDim2.new(0, 200, 0, 92)\
+note.Font = Enum.Font.SourceSans\
+note.Text = "NOTE:when you use this setting you have to turn on highlight"\
+note.TextColor3 = Color3.fromRGB(252, 255, 255)\
+note.TextSize = 14.000\
+\
+normalspeed.Name = "normal speed"\
+normalspeed.Parent = Settingsandmorethings\
+normalspeed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)\
+normalspeed.BackgroundTransparency = 0.900\
+normalspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)\
+normalspeed.BorderSizePixel = 0\
+normalspeed.Position = UDim2.new(0.130146548, 0, 0.747619092, 0)\
+normalspeed.Size = UDim2.new(0, 159, 0, 50)\
+normalspeed.Font = Enum.Font.SourceSans\
+normalspeed.Text = "normal speed"\
+normalspeed.TextColor3 = Color3.fromRGB(255, 255, 255)\
+normalspeed.TextSize = 14.000\
+\
+-- Scripts:\
+\
+local function AYDOOWM_fake_script() -- InvisibilityButton.InvisibilityToggleScript \
+	local script = Instance.new('LocalScript', InvisibilityButton)\
+\
+	local button = script.Parent\
+	local invisible = false\
+	local player = game.Players.LocalPlayer\
+	local remoteEvent = game.ReplicatedStorage:WaitForChild("ToggleInvisibility")\
+	\
+	local function onInvisibilityToggled()\
+		invisible = not invisible\
+		-- This sends the event to the server, telling it to make the player invisible or visible\
+		remoteEvent:FireServer(invisible)\
+		-- Update the button text\
+		button.Text = invisible and "Become Visible" or "Become Invisible"\
+	end\
+	\
+	-- Connect the button click to the invisibility toggle function\
+	button.MouseButton1Click:Connect(onInvisibilityToggled)\
+	\
+	-- Reset invisibility state when the character respawns\
+	player.CharacterAdded:Connect(function()\
+		invisible = false\
+		button.Text = "Become Invisible"\
+	end)\
+	\
+end\
+coroutine.wrap(AYDOOWM_fake_script)()\
+local function KXCS_fake_script() -- InvisibilityButton.SoundClickScript \
+	local script = Instance.new('LocalScript', InvisibilityButton)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(KXCS_fake_script)()\
+local function CQQJ_fake_script() -- HighlightButton.LocalScript \
+	local script = Instance.new('LocalScript', HighlightButton)\
+\
+	local button = script.Parent\
+	local player = game.Players.LocalPlayer\
+	local isHighlighted = false\
+	\
+	local function toggleHighlight(state)\
+		for _, otherPlayer in ipairs(game.Players:GetPlayers()) do\
+			if otherPlayer.Character then\
+				-- Ensure we have a model (character) and humanoid\
+				local character = otherPlayer.Character\
+				local highlight = character:FindFirstChild("Highlight")\
+	\
+				if state then\
+					-- Add Highlight if it's not already there\
+					if not highlight then\
+						highlight = Instance.new("Highlight")\
+						highlight.FillColor = Color3.new(1, 0, 0) -- Red fill color\
+						highlight.OutlineColor = Color3.new(1, 0, 0) -- Red outline color\
+						highlight.Parent = character\
+					end\
+				else\
+					-- Remove Highlight if it exists\
+					if highlight then\
+						highlight:Destroy()\
+					end\
+				end\
+			end\
+		end\
+	end\
+	\
+	button.MouseButton1Click:Connect(function()\
+		isHighlighted = not isHighlighted\
+	\
+		-- Update button text based on the current state\
+		if isHighlighted then\
+			button.Text = "Unhighlight Players"\
+		else\
+			button.Text = "Highlight Players"\
+		end\
+	\
+		toggleHighlight(isHighlighted)\
+	end)\
+	\
+	-- Ensure Highlight is applied to the local player as well\
+	player.CharacterAdded:Connect(function(character)\
+		-- Ensure to apply the Highlight to the local player as well\
+		toggleHighlight(isHighlighted)\
+	end)\
+	\
+end\
+coroutine.wrap(CQQJ_fake_script)()\
+local function WZCXD_fake_script() -- HighlightButton.SoundClickScript \
+	local script = Instance.new('LocalScript', HighlightButton)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(WZCXD_fake_script)()\
+local function KBQHN_fake_script() -- Settingsandmore.LocalScript \
+	local script = Instance.new('LocalScript', Settingsandmore)\
+\
+	local frame = script.Parent.Parent.Parent:WaitForChild('Settings and more things')\
+	script.Parent.MouseButton1Click:connect(function()\
+		frame.Visible = not frame.Visible\
+	end)\
+	\
+end\
+coroutine.wrap(KBQHN_fake_script)()\
+local function GJHD_fake_script() -- Settingsandmore.SoundClickScript \
+	local script = Instance.new('LocalScript', Settingsandmore)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(GJHD_fake_script)()\
+local function FWEVMXR_fake_script() -- Menu.drag \
+	local script = Instance.new('LocalScript', Menu)\
+\
+	local UserInputService = game:GetService("UserInputService")\
+	local runService = game:GetService("RunService")\
+	\
+	local frame = script.Parent\
+	local dragging = false\
+	local dragInput, mousePos, framePos\
+	\
+	-- Function to update the frame's position as it's dragged\
+	local function update(input)\
+		local delta = input.Position - mousePos\
+		frame.Position = UDim2.new(\
+			framePos.X.Scale,\
+			framePos.X.Offset + delta.X,\
+			framePos.Y.Scale,\
+			framePos.Y.Offset + delta.Y\
+		)\
+	end\
+	\
+	frame.InputBegan:Connect(function(input)\
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then\
+			dragging = true\
+			mousePos = input.Position\
+			framePos = frame.Position\
+	\
+			input.Changed:Connect(function()\
+				if input.UserInputState == Enum.UserInputState.End then\
+					dragging = false\
+				end\
+			end)\
+		end\
+	end)\
+	\
+	frame.InputChanged:Connect(function(input)\
+		if input.UserInputType == Enum.UserInputType.MouseMovement then\
+			dragInput = input\
+		end\
+	end)\
+	\
+	runService.RenderStepped:Connect(function()\
+		if dragging and dragInput then\
+			update(dragInput)\
+		end\
+	end)\
+	\
+	\
+end\
+coroutine.wrap(FWEVMXR_fake_script)()\
+local function UTKBM_fake_script() -- _800speed.LocalScript \
+	local script = Instance.new('LocalScript', _800speed)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 800\
+	end)\
+end\
+coroutine.wrap(UTKBM_fake_script)()\
+local function LOFZ_fake_script() -- _800speed.SoundClickScript \
+	local script = Instance.new('LocalScript', _800speed)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(LOFZ_fake_script)()\
+local function OBDNI_fake_script() -- ImageButton.LocalScript \
+	local script = Instance.new('LocalScript', ImageButton)\
+\
+	local frame = script.Parent.Parent.Parent:WaitForChild('Menu')\
+	script.Parent.MouseButton1Click:connect(function()\
+		frame.Visible = not frame.Visible\
+	end)\
+	\
+	\
+end\
+coroutine.wrap(OBDNI_fake_script)()\
+local function QBQDZB_fake_script() -- ImageButton.SoundClickScript \
+	local script = Instance.new('LocalScript', ImageButton)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(QBQDZB_fake_script)()\
+local function DMLSVTL_fake_script() -- Settingsandmorethings.Drag \
+	local script = Instance.new('LocalScript', Settingsandmorethings)\
+\
+	local UserInputService = game:GetService("UserInputService")\
+	local runService = game:GetService("RunService")\
+	\
+	local frame = script.Parent\
+	local dragging = false\
+	local dragInput, mousePos, framePos\
+	\
+	-- Function to update the frame's position as it's dragged\
+	local function update(input)\
+		local delta = input.Position - mousePos\
+		frame.Position = UDim2.new(\
+			framePos.X.Scale,\
+			framePos.X.Offset + delta.X,\
+			framePos.Y.Scale,\
+			framePos.Y.Offset + delta.Y\
+		)\
+	end\
+	\
+	frame.InputBegan:Connect(function(input)\
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then\
+			dragging = true\
+			mousePos = input.Position\
+			framePos = frame.Position\
+	\
+			input.Changed:Connect(function()\
+				if input.UserInputState == Enum.UserInputState.End then\
+					dragging = false\
+				end\
+			end)\
+		end\
+	end)\
+	\
+	frame.InputChanged:Connect(function(input)\
+		if input.UserInputType == Enum.UserInputType.MouseMovement then\
+			dragInput = input\
+		end\
+	end)\
+	\
+	runService.RenderStepped:Connect(function()\
+		if dragging and dragInput then\
+			update(dragInput)\
+		end\
+	end)\
+	\
+	\
+end\
+coroutine.wrap(DMLSVTL_fake_script)()\
+local function ZKSHRZT_fake_script() -- Settingsandmorethings.Highlight color \
+	local script = Instance.new('LocalScript', Settingsandmorethings)\
+\
+	local sliderFrame = script.Parent -- The Frame containing the slider\
+	local sliderButton = sliderFrame:WaitForChild("TextButton") -- The draggable button\
+	local highlightColor = Color3.new(1, 0, 0) -- Default red color\
+	\
+	-- Function to update the highlight color based on slider position\
+	local function updateHighlightColor()\
+		local positionX = sliderButton.Position.X.Scale\
+		local newColor = Color3.fromHSV(positionX, 1, 1) -- Convert position to color using HSV\
+		highlightColor = newColor\
+	\
+		-- Update the color of the highlight for all players\
+		for _, player in ipairs(game.Players:GetPlayers()) do\
+			if player.Character then\
+				local highlight = player.Character:FindFirstChild("Highlight")\
+				if highlight then\
+					highlight.FillColor = highlightColor\
+					highlight.OutlineColor = highlightColor\
+				end\
+			end\
+		end\
+	end\
+	\
+	-- Function to handle dragging the slider button\
+	local function onInputBegan(input)\
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then\
+			local inputConnection\
+			local dragConnection\
+			local releaseConnection\
+	\
+			-- Dragging function\
+			dragConnection = input.Changed:Connect(function()\
+				if input.UserInputState == Enum.UserInputState.End then\
+					dragConnection:Disconnect()\
+					releaseConnection:Disconnect()\
+				end\
+			end)\
+	\
+			releaseConnection = game:GetService("UserInputService").InputChanged:Connect(function(moveInput)\
+				if moveInput.UserInputType == Enum.UserInputType.MouseMovement then\
+					local relativeX = (moveInput.Position.X - sliderFrame.AbsolutePosition.X) / sliderFrame.AbsoluteSize.X\
+					sliderButton.Position = UDim2.new(math.clamp(relativeX, 0, 1), 0, sliderButton.Position.Y.Scale, sliderButton.Position.Y.Offset)\
+					updateHighlightColor()\
+				end\
+			end)\
+		end\
+	end\
+	\
+	sliderButton.InputBegan:Connect(onInputBegan)\
+	\
+	\
+end\
+coroutine.wrap(ZKSHRZT_fake_script)()\
+local function RNYU_fake_script() -- normalspeed.LocalScript \
+	local script = Instance.new('LocalScript', normalspeed)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16\
+	end)\
+	\
+end\
+coroutine.wrap(RNYU_fake_script)()\
+local function KROHHJ_fake_script() -- normalspeed.SoundClickScript \
+	local script = Instance.new('LocalScript', normalspeed)\
+\
+	script.Parent.MouseButton1Click:Connect(function()\
+		script.Disabled = true\
+		script.Click:Play()\
+		wait(0.1)\
+		script.Disabled = false\
+	end)\
+	\
+end\
+coroutine.wrap(KROHHJ_fake_script)()\
+}
